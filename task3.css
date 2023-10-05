@@ -1,0 +1,98 @@
+.b1{
+    height: 200px;
+    width: 200px;
+    background: #000;
+    position: absolute;
+    bottom: 5%;
+    animation: fall 2.25s linear;
+    right: 50%;
+}
+
+.b2{
+    height: 100px;
+    animation: fall 4.5s linear;
+    width: 100px;
+    background: yellow;
+}
+.b4{
+    height: 100px;
+    width: 100px;
+    background: brown;
+    position: relative;
+    animation: fall 3.25s linear;
+    left: 0%;
+    top: -10%;
+}
+.b3{
+    height: 20px;
+    width: 20px;
+    background: red;
+    position: relative;
+    left: 50%;
+    top: -50%;
+    animation: fall 3s linear;
+}
+.b5{
+    height: 20px;
+    width: 80px;
+    background: blue;
+    position: relative;
+    left: 60%;
+    top: -110%;
+    animation: fall 4s linear;
+}
+
+
+.b6{
+    
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 100px solid red;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        animation: fall 3s linear;
+}
+.b7{
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 80px solid purple;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    animation: fall 5s linear;
+}
+.b8{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 80px solid wheat;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    animation: fall 4s linear;
+}
+.b9{
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 100px solid orange;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    animation: fall 6s linear;
+}
+
+
+@keyframes fall {
+    0%{
+        top:-200%
+    }
+    
+}

@@ -1,0 +1,81 @@
+.div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+}
+.b1{
+    background: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 2px solid red;
+    transform: rotateX(60deg);
+    z-index: 20;
+}
+
+.b2{
+    height: 200px;
+    width: 30px;
+    background: brown;
+    position: absolute;
+    
+    animation: rotate 2s linear infinite;
+    top: 50%;
+    transform-origin: top;
+}
+
+.b3{
+    height: 200px;
+    width: 30px;
+    background: purple;
+    position: absolute;
+    transform-origin: top;
+    transform: rotate(90deg);
+    top: 50%;
+    
+    animation: rotate 3s linear infinite;
+}
+
+.b4{
+    height: 200px;
+    width: 30px;
+    background: blue;
+    position: absolute;
+    transform-origin: top;
+    transform: rotate(90deg);
+    top: 50%;
+    
+    animation: rotate 4s linear infinite;
+}
+
+.b5{
+    height: 200px;
+    width: 30px;
+    background: green;
+    position: absolute;
+    top: 50%;
+    transform-origin:top;
+    animation: rotate 5s linear infinite ;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg) scale(2);
+        width: 30px;
+        height: 500px;
+    }
+    50%{
+        transform: rotate(180deg) scale(1);
+        width: 10px;
+        height: 100px;
+    }
+    100%{
+        transform: rotate(360deg) scale(2);
+        width: 30px;
+        height: 500px;
+    }
+}
